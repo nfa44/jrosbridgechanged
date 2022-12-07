@@ -206,8 +206,7 @@ public class Ros {
 			return true;
 		} catch (DeploymentException | URISyntaxException | IOException e) {
 			// failed connection, return false
-			System.err.println("[ERROR]: Could not create WebSocket: "
-					+ e.getMessage());
+			e.printStackTrace();
 			return false;
 		}
 	}
